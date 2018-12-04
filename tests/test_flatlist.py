@@ -29,3 +29,10 @@ class Testflatlist(unittest.TestCase):
             flatten_list(inp),
             [1, 2, 3, 4, 5]
         )
+
+    def test_different_nested_various_types(self):
+        inp = [1, 2, ['pupa', 3.14], b'hey', ['ho', {'nope?': 'nope.'}]]
+        self.assertListEqual(
+            flatten_list(inp),
+            [1, 2, 'pupa', 3.14, b'hey', 'ho', {'nope?': 'nope.'}]
+        )
