@@ -1,5 +1,5 @@
 # Flatlist
-![travis status](https://api.travis-ci.org/dwabece/flatlist.svg?branch=master)
+[<img src="https://api.travis-ci.org/dwabece/flatlist.svg?branch=master">](https://travis-ci.org/dwabece/flatlist)
 
 Recursively flattens list containing nested ones.
 
