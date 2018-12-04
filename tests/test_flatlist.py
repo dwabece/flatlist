@@ -16,6 +16,13 @@ class Testflatlist(unittest.TestCase):
             []
         )
 
+    def test_nested_empty(self):
+        inp = [[[], [], [[], []]]]
+        self.assertListEqual(
+            flatten_list(inp),
+            []
+        )
+
     def test_multilevel(self):
         inp = [1, [2, 3], 4]
         self.assertListEqual(
